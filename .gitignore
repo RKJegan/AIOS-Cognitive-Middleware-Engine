@@ -1,0 +1,190 @@
+
+# ==========================================
+# Python cache and compiled files
+# ==========================================
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+
+# ==========================================
+# Virtual environments
+# ==========================================
+.venv/
+venv/
+env/
+ENV/
+
+# ==========================================
+# Build and packaging
+# ==========================================
+build/
+dist/
+*.egg-info/
+.eggs/
+wheels/
+
+# ==========================================
+# Environment variables and secrets
+# ==========================================
+.env
+.env.*
+!.env.example
+secrets/
+credentials/
+credentials.json
+token.json
+client_secret*.json
+service-account*.json
+*.pem
+*.key
+*.p12
+*.pfx
+
+# ==========================================
+# Browser credentials and session data
+# ==========================================
+browser_data/
+browser-data/
+browser_profile/
+browser_profiles/
+browser-profiles/
+chrome_profile/
+chrome_profiles/
+edge_profile/
+firefox_profile/
+
+user_data/
+user-data/
+profiles/
+sessions/
+cookies/
+cookies.json
+cookies.txt
+*cookie*
+*credential*
+*password*
+*secret*
+*auth_token*
+*access_token*
+*refresh_token*
+*session_token*
+*storage_state*
+playwright/.auth/
+.auth/
+.auth_state/
+storage_state.json
+state.json
+
+# Browser automation generated data
+downloads/
+browser_downloads/
+screenshots/
+browser_screenshots/
+traces/
+playwright-report/
+test-results/
+*.har
+
+# ==========================================
+# Private workflow data and runtime state
+# Keep workflow source code tracked
+# ==========================================
+workflow_data/
+workflow-data/
+workflow_runs/
+workflow-runs/
+workflow_state/
+workflow-state/
+private_workflows/
+user_workflows/
+saved_workflows/
+runtime_data/
+runtime-data/
+local_state/
+local-state/
+
+# Ignore private workflow exports
+workflow_export.json
+workflow_export*.json
+workflow_state.json
+workflow_history.json
+workflow_secrets.json
+
+# ==========================================
+# AI models and generated artifacts
+# ==========================================
+models/
+*.gguf
+*.safetensors
+*.onnx
+*.pt
+*.pth
+*.bin
+
+# ==========================================
+# Audio and recordings
+# ==========================================
+recordings/
+audio_output/
+*.wav
+*.mp3
+*.flac
+
+# ==========================================
+# Logs and temporary files
+# ==========================================
+*.log
+logs/
+tmp/
+temp/
+*.tmp
+.cache/
+.cache_*/
+
+# ==========================================
+# Tests and coverage
+# ==========================================
+.pytest_cache/
+.coverage
+htmlcov/
+.tox/
+.nox/
+
+# ==========================================
+# IDE and operating system files
+# ==========================================
+.vscode/
+.idea/
+*.swp
+*.swo
+.DS_Store
+Thumbs.db
+Desktop.ini
+
+# ==========================================
+# Jupyter
+# ==========================================
+.ipynb_checkpoints/
+
+# ==========================================
+# Local databases
+# ==========================================
+*.sqlite
+*.sqlite3
+*.db
+data/local/
+
+# ============================
+# AIOS personal runtime data
+# ============================
+data/workflows.json
+data/logs/
+data/automation_profile/
+data/user_examples.txt
+
+
+# ==========================================
+# Keep safe example configuration tracked
+# ==========================================
+!.env.example

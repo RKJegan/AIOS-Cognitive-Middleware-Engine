@@ -1,0 +1,176 @@
+# text | intent | action | name | location_ref | destination_ref      ( - = none )
+# Add your own lines to data/user_examples.txt in the same format; they are loaded too.
+open chrome | app_control | open | chrome | - | -
+open notepad | app_control | open | notepad | - | -
+launch the calculator | app_control | open | calculator | - | -
+start excel | app_control | open | excel | - | -
+close chrome | app_control | close | chrome | - | -
+close notepad | app_control | close | notepad | - | -
+quit vlc | app_control | close | vlc | - | -
+close all open apps | app_control | close_all | - | - | -
+close everything i opened | app_control | close_all | - | - | -
+uninstall spotify | app_control | uninstall | spotify | - | -
+remove the app zoom | app_control | uninstall | zoom | - | -
+create folder in ML pipeline called preprocessing | file_operation | create_folder | preprocessing | ML pipeline | -
+make a new folder projects on desktop | file_operation | create_folder | projects | desktop | -
+create file notes.txt on desktop | file_operation | create_file | notes.txt | desktop | -
+create a file called todo.txt | file_operation | create_file | todo.txt | - | -
+list files in downloads | file_operation | list_folder | - | downloads | -
+list files on desktop | file_operation | list_folder | - | desktop | -
+show me what is in documents | file_operation | list_folder | - | documents | -
+what files are on my desktop | file_operation | list_folder | - | desktop | -
+open downloads folder | file_operation | open | downloads | - | -
+open the documents folder | file_operation | open | documents | - | -
+close downloads folder | file_operation | close | downloads | - | -
+close all open folders | file_operation | close_all | - | - | -
+copy report.docx from documents to desktop | file_operation | copy | report.docx | documents | desktop
+move report.docx from downloads to documents | file_operation | move | report.docx | downloads | documents
+delete old.txt from desktop | file_operation | delete | old.txt | desktop | -
+remove the file notes.txt from documents | file_operation | delete | notes.txt | documents | -
+rename draft.txt to final.txt on desktop | file_operation | rename | draft.txt | desktop | final.txt
+find report.pdf in documents | file_operation | search | report.pdf | documents | -
+search for budget.xlsx on my computer | file_operation | search | budget.xlsx | - | -
+compress project folder on desktop | file_operation | compress | project | desktop | -
+zip the folder photos in pictures | file_operation | compress | photos | pictures | -
+open browser | browser_action | open | - | - | -
+open the web browser | browser_action | open | - | - | -
+open youtube | browser_action | open_url | youtube | - | -
+open github on brave | browser_action | open_url | github | brave | -
+go to wikipedia.org | browser_action | open_url | wikipedia.org | - | -
+open gmail on edge | browser_action | open_url | gmail | edge | -
+search python tutorials | browser_action | search | python tutorials | - | -
+google machine learning courses | browser_action | search | machine learning courses | - | -
+search whatsapp web on brave | browser_action | search | whatsapp web | brave | -
+close all tabs | browser_action | close_all | - | - | -
+close the browser | browser_action | close | - | - | -
+go to wikipedia.org in the automation browser | web_automation | goto | wikipedia.org | - | -
+read this page | web_automation | read_page | - | - | -
+what does this webpage say | web_automation | read_page | - | - | -
+click the sign in button | web_automation | click | sign in | - | -
+click on search | web_automation | click | search | - | -
+type hello world into the search box | web_automation | fill | search box | - | hello world
+fill the email field with test@example.com | web_automation | fill | email | - | test@example.com
+press enter | web_automation | press | enter | - | -
+scroll down | web_automation | scroll | down | - | -
+scroll up | web_automation | scroll | up | - | -
+take a webpage screenshot | web_automation | screenshot | - | - | -
+close the automation browser | web_automation | close | - | - | -
+what's my cpu usage | system_monitor | status | cpu | - | -
+how much ram am i using | system_monitor | status | ram | - | -
+how much memory is used | system_monitor | status | memory | - | -
+what is my battery level | system_monitor | status | battery | - | -
+how much space is on my s drive | system_monitor | status | s | - | -
+how much storage is left on drive c | system_monitor | status | c | - | -
+show full system status | system_monitor | status | - | - | -
+get system status | system_monitor | status | - | - | -
+how long has my pc been on | system_monitor | status | uptime | - | -
+show top processes | system_monitor | top_processes | - | - | -
+which programs use the most cpu | system_monitor | top_processes | - | - | -
+set volume to 40 | system_control | set_volume | 40 | - | -
+change the volume to 75 percent | system_control | set_volume | 75 | - | -
+volume up | system_control | volume_up | - | - | -
+turn the volume down | system_control | volume_down | - | - | -
+mute the sound | system_control | mute | - | - | -
+mute | system_control | mute | - | - | -
+unmute the sound | system_control | unmute | - | - | -
+set brightness to 70 | system_control | set_brightness | 70 | - | -
+make the screen brighter 90 percent | system_control | set_brightness | 90 | - | -
+lock the screen | system_control | lock | - | - | -
+lock my computer | system_control | lock | - | - | -
+shut down the computer | system_control | shutdown | - | - | -
+turn off the pc | system_control | shutdown | - | - | -
+cancel shutdown | system_control | cancel_shutdown | - | - | -
+turn on dark mode | system_control | dark_mode | on | - | -
+switch to light mode | system_control | dark_mode | off | - | -
+end all tasks | process_management | end_all | - | - | -
+close all running processes i started | process_management | end_all | - | - | -
+list running processes | process_management | list | - | - | -
+show running processes | process_management | list | - | - | -
+find process chrome | process_management | find | chrome | - | -
+is vlc running | process_management | find | vlc | - | -
+kill vlc | process_management | kill | vlc | - | -
+end the process notepad | process_management | kill | notepad | - | -
+restart vlc | process_management | restart | vlc | - | -
+run my dev session workflow | workflow | run | dev session | - | -
+start my morning routine workflow | workflow | run | morning routine | - | -
+list my workflows | workflow | list | - | - | -
+show my saved workflows | workflow | list | - | - | -
+start recording workflow called dev session | workflow | record_start | dev session | - | -
+record a workflow named study mode | workflow | record_start | study mode | - | -
+stop recording | workflow | record_stop | - | - | -
+save the workflow | workflow | record_stop | - | - | -
+delete workflow dev session | workflow | delete | dev session | - | -
+schedule dev session workflow every day at 9am | scheduling | schedule | dev session | - | every day at 9am
+run my morning routine in 30 minutes | scheduling | schedule | morning routine | - | in 30 minutes
+list my schedules | scheduling | list | - | - | -
+show scheduled jobs | scheduling | list | - | - | -
+cancel schedule 2 | scheduling | cancel | 2 | - | -
+remind me to submit report in 10 minutes | notification | remind | submit report | - | in 10 minutes
+remind me to drink water in 1 hour | notification | remind | drink water | - | in 1 hour
+set a reminder to call mom in 5 minutes | notification | remind | call mom | - | in 5 minutes
+show notification build finished | notification | notify | build finished | - | -
+notify me that the download is done | notification | notify | download is done | - | -
+send me a notification saying lunch time | notification | notify | lunch time | - | -
+copy hello to clipboard | clipboard | copy | hello | - | -
+put the text meeting at 5 on the clipboard | clipboard | copy | meeting at 5 | - | -
+what is in my clipboard | clipboard | paste | - | - | -
+paste from clipboard | clipboard | paste | - | - | -
+show clipboard history | clipboard | history | - | - | -
+select clipboard item 2 | clipboard | select | 2 | - | -
+clear the clipboard | clipboard | clear | - | - | -
+take a screenshot | screenshot | screenshot | - | - | -
+capture my screen | screenshot | screenshot | - | - | -
+read the text on my screen | screenshot | read_screen | - | - | -
+read text from scan.png on desktop | screenshot | ocr_file | scan.png | desktop | -
+git status | developer_operation | git_status | - | - | -
+what changed in my repo | developer_operation | git_status | - | - | -
+commit changes with message fixed login bug | developer_operation | git_commit | fixed login bug | - | -
+git commit with message added tests | developer_operation | git_commit | added tests | - | -
+git push | developer_operation | git_push | - | - | -
+push my code | developer_operation | git_push | - | - | -
+git pull | developer_operation | git_pull | - | - | -
+pull the latest changes | developer_operation | git_pull | - | - | -
+create virtual environment venv | developer_operation | create_venv | venv | - | -
+make a python virtual environment called env | developer_operation | create_venv | env | - | -
+install package requests | developer_operation | install_package | requests | - | -
+pip install numpy | developer_operation | install_package | numpy | - | -
+run python --version | developer_operation | run_command | python --version | - | -
+run the command pip list | developer_operation | run_command | pip list | - | -
+send email to dr ahmed saying project submitted | email | send | dr ahmed | - | project submitted
+email john that i will be late | email | send | john | - | i will be late
+read my emails | email | read | - | - | -
+check my inbox | email | read | - | - | -
+read report.pdf on desktop | document | read | report.pdf | desktop | -
+open and read the document notes.docx in documents | document | read | notes.docx | documents | -
+search for budget in report.pdf on desktop | document | search_in | report.pdf | desktop | budget
+find the word deadline in plan.docx on desktop | document | search_in | plan.docx | desktop | deadline
+summarize proposal.pdf on desktop | text_assistant | summarize | proposal.pdf | desktop | -
+give me a summary of notes.docx in documents | text_assistant | summarize | notes.docx | documents | -
+translate good morning to french | text_assistant | translate | good morning | - | french
+how do you say thank you in spanish | text_assistant | translate | thank you | - | spanish
+draft an email about project delay | text_assistant | draft | project delay | - | -
+write an email about the meeting tomorrow | text_assistant | draft | meeting tomorrow | - | -
+explain this error name not defined | text_assistant | explain | name not defined | - | -
+remember that my project is called AIOS | memory | remember | my project is called AIOS | - | -
+remember my supervisor is dr arasu | memory | remember | my supervisor is dr arasu | - | -
+what do you remember | memory | recall | - | - | -
+what have you remembered about me | memory | recall | - | - | -
+forget project | memory | forget | project | - | -
+show my command history | memory | history | - | - | -
+what did i ask you before | memory | history | - | - | -
+set my default browser to brave | memory | set_pref | default browser | - | brave
+make edge my default browser | memory | set_pref | default browser | - | edge
+calculate 15 times 8 | plugin | calculate | 15 times 8 | - | -
+what is 20 plus 35 | plugin | calculate | 20 plus 35 | - | -
+what time is it | plugin | time | - | - | -
+tell me the time | plugin | time | - | - | -
+list monitors | multi_monitor | list | - | - | -
+how many screens do i have | multi_monitor | list | - | - | -
+move chrome to the second monitor | multi_monitor | move_window | chrome | - | second monitor
+set coding workspace to S:\Projects\demo | code_agent | set_workspace | S:\Projects\demo | - | -
+ask claude to write a snake game | code_agent | write_code | a snake game | - | -
+have claude code a login page | code_agent | write_code | a login page | - | -
+hello | unknown | unknown | - | - | -
+thank you | unknown | unknown | - | - | -
+what is the meaning of life | unknown | unknown | - | - | -
+stop listening | unknown | unknown | - | - | -
