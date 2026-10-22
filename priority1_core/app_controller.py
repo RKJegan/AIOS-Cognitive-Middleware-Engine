@@ -201,3 +201,21 @@ class AppController:
                 return True
             time.sleep(0.3)
         return False
+
+    def kill_process(self, name):
+        check = self.safety.validate("kill", name)
+        if check["status"] != "approved":
+            return check
+        return self.close_app(name)
+
+    def restart_process(self, name):
+        check = self.safety.validate("restart", name)
+        if check["status"] != "approved":
+            return check
+        close_result = self.close_app(name)
+        time.sleep(1)
+        open_result = self.open_app(name)
+        ok = open_result["status"] == "success"
+        return {"status": "success" if ok else "error",
+                "message": f"Restarted {name}" if ok else f"Closed but couldn't reopen {name}",
+                "data": {"close": close_result, "open": open_result}}

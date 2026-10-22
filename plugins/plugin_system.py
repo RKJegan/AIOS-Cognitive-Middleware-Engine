@@ -15,7 +15,7 @@ class PluginSystem:
     def _load(self):
         import plugins
         for _, name, _ in pkgutil.iter_modules(plugins.__path__):
-            if not name.startswith("plugin_"):
+            if not name.startswith("plugin_") or name == "plugin_system":
                 continue
             try:
                 mod = importlib.import_module(f"plugins.{name}")

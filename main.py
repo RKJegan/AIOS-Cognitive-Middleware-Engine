@@ -135,6 +135,7 @@ class System:
         results = (result.get("data") or {}).get("results") or []
         for step, r in zip(steps, results):
             self.memory.log_command(step, r)
+            self.planner.context.record(steps, results)
             if step.get("intent") != "workflow" and r.get("status") == "success":
                 self.wm.track_step(step)
         return result

@@ -9,11 +9,12 @@ class TextAssistant:
     def __init__(self, brain, document_controller=None):
         self.brain = brain
         self.docs = document_controller
-
     def summarize(self, name, location_ref):
         text = name
         if location_ref and self.docs:
-            path = str(Path(location_ref) / name)
+            aliases = {"desktop": Path.home() / "Desktop", "documents": Path.home() / "Documents", "downloads": Path.home() / "Downloads"}
+            base = aliases.get((location_ref or "").lower(), Path(location_ref))
+            path = str(base / name)
             result = self.docs.read(path)
             if result["status"] != "success":
                 return result

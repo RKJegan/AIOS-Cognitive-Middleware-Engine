@@ -8,10 +8,11 @@ _available = True
 
 
 def _run_hud():
+    global _available
     try:
         import tkinter as tk
+        root = tk.Tk()
     except Exception:
-        global _available
         _available = False
         return
 

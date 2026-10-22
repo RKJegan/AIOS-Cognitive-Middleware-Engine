@@ -291,16 +291,22 @@ class FileController:
             if not dest_ref:
                 narrate("What should the new name be?")
                 return {"status": "needs_clarification", "message": "Missing new name", "data": None}
+            check = self.safety.validate("rename", str(Path(path).parent / dest_ref))
+            if check["status"] != "approved":
+                return check
             return self.rename(path, dest_ref)
         if action in ("copy", "move"):
             dest_dir = self.resolve_destination(dest_ref)
             if not dest_dir:
-                narrate("Where should I put it? Give a full path or a known location.")
+                narrate("Where should I put it? Give a full path or a known location like Documents.")
                 return {"status": "needs_clarification", "message": "Missing or unknown destination", "data": None}
             target = str(Path(dest_dir) / Path(path).name)
+            check = self.safety.validate(action, target)
+            if check["status"] != "approved":
+                return check
             return self.copy(path, target) if action == "copy" else self.move(path, target)
-        return {"status": "unhandled", "message": f"File action '{action}' not implemented yet", "data": None}
-
+    
+    
     def verify_exists(self, intent, result):
         if result.get("status") != "success":
             return None
