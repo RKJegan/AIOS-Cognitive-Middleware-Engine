@@ -104,7 +104,7 @@ The project includes modules for:
 - Text-to-speech responses
 - A narration HUD for displaying assistant feedback
 
-The default wake-word configuration is `hey_jarvis`. Voice capabilities depend on compatible audio hardware, installed packages, and downloaded model assets.
+The default wake-word configuration is `weather`. Voice capabilities depend on compatible audio hardware, installed packages, and downloaded model assets.
 
 ### 3. Application and file control
 
@@ -399,7 +399,7 @@ Memory and GPU requirements depend on the selected LLM, speech-recognition backe
 ### 1. Clone the repository
 
 ```powershell
-git clone https://github.com/YOUR_USERNAME/YOUR_REPOSITORY.git
+git clone https://github.com/RKJegan/AIOS-Cognitive-Middleware-Engine
 cd YOUR_REPOSITORY
 ```
 
@@ -875,17 +875,10 @@ Follow the existing modular structure when adding new controllers or capabilitie
 
 ---
 
-## Team
+## Author
 
-AIOS is developed collaboratively by three team members.
-
-| Team member | Contribution |
-|---|---|
-| Team Member 1 | Update with actual name and responsibilities |
-| Team Member 2 | Update with actual name and responsibilities |
-| Team Member 3 | Update with actual name and responsibilities |
-
-Replace these placeholders with the actual contributors and their roles before publishing the repository.
+Jegan R K
+AI Engineer | ML Engineer | Forwaed Deployed Engineering
 
 ---
 
